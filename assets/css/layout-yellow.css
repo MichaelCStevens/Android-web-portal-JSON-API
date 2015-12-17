@@ -1,0 +1,7 @@
+body {
+    background: url("../img/body-bg-yellow.png") repeat-x -3px -27px;
+    background-color:#fee30a!important;
+}
+.theme-color-bg{background:#fee30a!important;}
+body #wrapper footer .span6:first-child {color:#000;}
+.footer-logo {background:url(../img/footer-logo-black.png) no-repeat top right}

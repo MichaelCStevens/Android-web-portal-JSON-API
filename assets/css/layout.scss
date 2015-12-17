@@ -1,0 +1,250 @@
+@import url("bootstrap.css");
+@import url("bootstrap-responsive.min.css");
+@font-face {
+    font-family: 'symantec_sansregular';
+    src: url('../fonts/sa______-webfont.eot');
+    src: url('../fonts/sa______-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sa______-webfont.woff') format('woff'),
+    url('../fonts/sa______-webfont.ttf') format('truetype'),
+    url('../fonts/sa______-webfont.svg#symantec_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'symantec_sansbold_italic';
+    src: url('../fonts/sabditsm-webfont.eot');
+    src: url('../fonts/sabditsm-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sabditsm-webfont.woff') format('woff'),
+    url('../fonts/sabditsm-webfont.ttf') format('truetype'),
+    url('../fonts/sabditsm-webfont.svg#symantec_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'symantec_sansbold';
+    src: url('../fonts/sabdsm__-webfont.eot');
+    src: url('../fonts/sabdsm__-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sabdsm__-webfont.woff') format('woff'),
+    url('../fonts/sabdsm__-webfont.ttf') format('truetype'),
+    url('../fonts/sabdsm__-webfont.svg#symantec_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+} 
+html{ }
+body{ 
+    font-family:symantec_sansregular; 
+    background: url('../img/body-bg.png') repeat-x ;
+    background-color:#f4f0ed!important;
+    
+    .left {
+        float:left
+    }
+    #wrapper {
+        font-family:symantec_sansregular; 
+        line-height:18px;
+        width:960px;
+        margin:0 auto;
+        
+        & header{
+            height:157px;
+            .logo {
+                height:107px;
+                background:url(../img/bg-pattern.png) top right no-repeat;
+            }
+            & nav{
+                float:left;
+                width:100%;
+                height:50px;
+                margin-bottom:0px;
+                ul{
+                    margin:0;
+                    padding:0;
+                    li.active{
+                        background:#fff;
+                        a{
+                            color:#636463;
+                        }
+                    }
+                    li{
+                        height:50px;
+                        float:left;
+                        list-style:none; 
+                        a{ 
+                            
+                            color:#fff;
+                            font-size:18px;
+                            display:block;
+                            font-family:symantec_sansbold;
+                            margin:0 25px;
+                            margin-top:14px;
+                        }
+                        a:hover{
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        article{
+            background:#fff;
+            -webkit-border-radius: 0px 0px 10px 10px;
+            border-radius: 0px 0px 10px 10px;
+            -webkit-box-shadow: 4px 9px 35px -13px rgba(0,0,0,0.75);
+            -moz-box-shadow: 4px 9px 35px -13px rgba(0,0,0,0.75);
+            box-shadow: 4px 9px 35px -13px rgba(0,0,0,0.75);
+            border:solid 1px #ccc;
+            border-top:none;
+            padding:20px;
+            .page{
+                a{
+                    color:#e78321;
+                    text-decoration:underline;
+                }
+                a.btn{
+                    color:#000;
+                    text-decoration:none;
+                }
+                label strong{
+                    font-size:22px
+                }
+                .edit-textarea {width:80%;height:150px;}
+                
+            }
+            .enter-data{
+                .notes{
+                    margin-top:20px; 
+                }
+            }
+            .editing-settings{
+                input[type="text"],select{
+                    width:100px
+                }
+            }
+            .item{
+                border-bottom:dotted 2px #c4c4c4;
+                padding:10px 0
+            }
+            label{
+                font-weight:bold;
+                font-size:22px;
+                font-family:symantec_sansbold;
+            }
+            .settings{
+                
+                input,select{font-weight:bold;}
+                .range-options{
+                    float:left; 
+                    input[type='text']{
+                        margin-top:8px;
+                        padding:20px 10px;
+                    }
+                }
+                .range-type, select{
+                    height:46px;
+                    padding:10px;
+                    float:left;
+                    margin-right:25px;
+                    margin-top:10px; 
+                }
+                
+                .pubpage{
+                    font-weight:normal;
+                    font-family:symantec_sansregular; 
+                    float:left;
+                    margin-right:10px;
+                }
+            }
+            .device{
+                .span2{
+                    width:20%;
+                    margin:0;
+                }
+                .scroll{
+                    height:25%;
+                    overflow: scroll;;
+                }
+                .device-container{
+                    border-top:solid 1px #ccc!important;
+                    text-align:center;
+                    border:solid 1px #ccc;
+                    padding:3%; 
+                    max-width:94%;
+                    -webkit-border-radius: 6px;
+                    -moz-border-radius: 6px;
+                    border-radius: 6px;
+                    .span2{
+                        word-break:break-all;
+                        width:20%;
+                        padding:5px 2%;
+                        border-right:solid 1px #ccc;
+                        img{
+                            max-height: 210px;
+                        }
+                        .user-line{
+                            display:block;
+                            width:100%;
+                            height:15px;
+                            overflow:hidden;
+                        }
+                        span.app{
+                            display:block;
+                            width:100%;
+                            height:15px;
+                            overflow:hidden; 
+                        }
+                        .title-line {
+                            display:block;
+                            width:100%;
+                            height:15px;
+                            overflow:hidden;
+                        }
+                    }
+                    .span2:last-child{
+                        border-right:none;
+                    }
+                }
+                .compare-devices-layout {  
+                    max-width:94%;
+                    padding: 0px 3%; 
+                    border-top: dotted 2px #ccc;
+                    h3{
+                        text-align:center;
+                        margin:0;
+                        span{
+                            color:#e78321;
+                        }
+                    }
+                    
+                }
+            } 
+            .notice{
+                font-weight:bold;
+                margin-top:15px;
+                color:#636463;
+                padding:10px 0;
+                border-top:dotted 3px #c4c4c4;
+                span:first-child{
+                    color:#000;
+                }
+                span{
+                    color:#e78321;
+                }
+            }
+            .android .results-header{
+                text-align:center;
+            }
+        }
+        footer{
+            margin-top:18px; 
+            color:a7a4a1;
+            .span6:first-child{padding-top:5px;padding-left:20px}
+            img{float:right;padding-right:20px;}
+            
+        }
+    }
+}
